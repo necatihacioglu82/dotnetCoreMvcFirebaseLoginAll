@@ -29,3 +29,4 @@ e:\xampp\htdocs\netCore\dotnetCoreMvcFirebaseLoginAll\obj\Debug\netcoreapp2.2\do
 e:\xampp\htdocs\netCore\dotnetCoreMvcFirebaseLoginAll\obj\Debug\netcoreapp2.2\dotnetCoreMvcFirebaseLoginAll.pdb
 e:\xampp\htdocs\netCore\dotnetCoreMvcFirebaseLoginAll\obj\Debug\netcoreapp2.2\dotnetCoreMvcFirebaseLoginAll.csproj.CopyComplete
 e:\xampp\htdocs\netCore\dotnetCoreMvcFirebaseLoginAll\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+e:\xampp\htdocs\netCore\dotnetCoreMvcFirebaseLoginAll\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.g.cshtml.cs

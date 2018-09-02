@@ -1,6 +1,7 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       $('#login-div').css("display", "none");
+      $('#register-div').css("display", "none");
       $('#user-div').css("display", "block");
 
         var user = firebase.auth().currentUser;
@@ -18,6 +19,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     } else {
       $('#login-div').css("display", "block");
+      $('#register-div').css("display", "block");
       $('#user-div').css("display", "none");
 
     }
@@ -66,4 +68,38 @@ function loginGoogle() {
         console.log(errorMessage);
 
       });
+}
+
+function loginTwitter() {
+  var provider = new firebase.auth.TwitterAuthProvider();
+
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    var token = result.credential.accessToken;
+    var secret = result.credential.secret;
+    var user = result.user;
+
+    console.log('user');
+    console.log(user);
+  }).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    var email = error.email;
+    var credential = error.credential;
+
+    console.log('error');
+    console.log(errorMessage);
+    console.log(credential);
+  });
+}
+
+function register() {
+  var email = $('#txtEmail').val();
+  var password = $('#txtPassword').val();
+
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    alert(errorMessage);
+  });
 }

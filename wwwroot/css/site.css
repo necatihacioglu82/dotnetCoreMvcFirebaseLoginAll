@@ -60,7 +60,7 @@ input, button {
   font-weight: 700;
 }
 
-.login-div, .user-div {
+.login-div, .user-div, .register-div {
   width: 50%;
   margin: 0px auto;
   margin-top: 150px;
@@ -68,7 +68,7 @@ input, button {
   display: none;
 }
 
-.login-div input {
+.login-div input, .register-div input {
   display: block;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -82,11 +82,11 @@ input, button {
   -moz-transition: 0.3s;
 }
 
-.login-div input:focus {
+.login-div input:focus, .register-div input:focus {
   border: 1px solid #777;
 }
 
-.login-div button, .user-div button {
+.login-div button, .user-div button, .register-div button {
   background: #5d8ffc;
   color: #fff;
   border: 0px;
@@ -99,7 +99,7 @@ input, button {
   -moz-transition: 0.3s;
 }
 
-.login-div button:hover, .user-div button:hover {
+.login-div button:hover, .user-div button:hover, .register-div button:hover {
   background: #fff;
   color: #5d8ffc;
   border: 1px solid #5d8ffc;

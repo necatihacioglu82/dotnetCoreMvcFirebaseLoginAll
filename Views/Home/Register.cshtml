@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<h2>Register Page</h2>
+
+<div class="register-div" id="register-div">
+    <h5>Firebase web register e-mail & password</h5>
+    <input type="text" placeholder="E-Mail..." id="txtEmail">
+    <input type="password" placeholder="Password..." id="txtPassword">
+    <button onclick="register()">Register to Firebase</button>
+</div>
+
+<div class="user-div" id="user-div">
+    <h3>Welcome, <p id="user_email"></p></h3>
+    <p>Welcome to Firebase login sample. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+</div>
