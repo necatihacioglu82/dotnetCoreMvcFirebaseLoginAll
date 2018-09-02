@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<h1>Login Page</h1>
+
+<div class="login-div" id="login-div">
+    <h3>Firebase web login e-mail & password</h3>
+    <input type="text" placeholder="E-Mail..." id="txtEmail">
+    <input type="password" placeholder="Password..." id="txtPassword">
+    <button onclick="login()">Login to Firebase</button>
+
+    <div class="Container">
+        <div class="Content"> 
+            <img src="https://miniclipsale.com/wp-content/uploads/2017/02/facebook-login.png" onclick="loginFB()">
+        </div>
+    </div>
+
+    <div class="Container">
+        <div class="Content"> 
+            <img src="http://data.brumov.org/go.png" onclick="loginGoogle()">
+        </div>
+    </div>
+</div>
+
+<div class="user-div" id="user-div">
+    <h3>Welcome, <p id="user_email"></p></h3>
+    <p>Welcome to Firebase login sample. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+</div>
